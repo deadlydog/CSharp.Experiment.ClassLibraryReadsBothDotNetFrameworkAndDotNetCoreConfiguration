@@ -1,6 +1,5 @@
 using Microsoft.Extensions.Configuration;
 using Net8ConsoleApp;
-using System.Configuration;
 
 var configuration = new ConfigurationBuilder()
 	.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
