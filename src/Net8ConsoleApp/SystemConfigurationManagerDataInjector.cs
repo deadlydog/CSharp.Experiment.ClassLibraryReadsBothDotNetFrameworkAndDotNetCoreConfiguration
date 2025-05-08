@@ -3,7 +3,7 @@ using System.Configuration;
 
 namespace Net8ConsoleApp;
 
-internal static class ConfigurationManagerDataInjector
+internal static class SystemConfigurationManagerDataInjector
 {
 	/// <summary>
 	/// Loads and overwrites the appSettings and connectionStrings sections of the XML configuration file with the provided configuration object.

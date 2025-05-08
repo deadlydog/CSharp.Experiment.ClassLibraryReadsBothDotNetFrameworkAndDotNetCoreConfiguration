@@ -6,7 +6,7 @@ var configuration = new ConfigurationBuilder()
 	.Build();
 
 // Inject the settings loaded from the JSON file into the System.Configuration.ConfigurationManager object.
-ConfigurationManagerDataInjector.LoadAppSettingsAndConnectionStringsIntoConfigurationManager(configuration);
+SystemConfigurationManagerDataInjector.LoadAppSettingsAndConnectionStringsIntoConfigurationManager(configuration);
 
 var netFramework = new NetFrameworkClassLibrary.NetFrameworkClass();
 netFramework.WriteConfigValueToConsole();
