@@ -12,7 +12,7 @@ The existing code has tons of references to `System.Configuration.ConfigurationM
 We want to see if we are able to use the same class libraries in both .NET Framework and .NET Core applications, without needing to change the code.
 This repo is a proof of concept to see if we can do that.
 
-## ❤️ Donate to support this project
+## ❤️ Donate to support more experiments like this
 
 Buy me an apple cider with whipped cream for providing this repo open source and for free 🙂
 
