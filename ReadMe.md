@@ -2,7 +2,7 @@
 
 ## 💬 Description
 
-This repo exists to see if we can have a .NET Standard class library read configuration, whether it is referenced from a .NET Framework or .NET Core application.
+This repo exists to see if we can have a .NET Standard class library read configuration, whether it is referenced from a .NET Framework or .NET Core application. e.g. `web`/`app.config` or `appsettings.json`.
 
 ## ❓ Why this exists
 
