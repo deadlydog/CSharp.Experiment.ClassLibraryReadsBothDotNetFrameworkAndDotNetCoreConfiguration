@@ -5,7 +5,7 @@ var configuration = new ConfigurationBuilder()
 	.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
 	.Build();
 
-// Inject the settings loaded from the JSON file into the ConfigurationManager object.
+// Inject the settings loaded from the JSON file into the System.Configuration.ConfigurationManager object.
 ConfigurationManagerDataInjector.LoadAppSettingsAndConnectionStringsIntoConfigurationManager(configuration);
 
 var netFramework = new NetFrameworkClassLibrary.NetFrameworkClass();
