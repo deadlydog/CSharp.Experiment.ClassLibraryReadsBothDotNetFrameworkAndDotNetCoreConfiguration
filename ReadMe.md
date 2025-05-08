@@ -22,6 +22,7 @@ You will need to:
 
 - Add the NuGet package to your .NET Core startup project (e.g. a .NET 8 console app).
 - Call the [ConfigurationManagerDataInjector class](/src/Net8ConsoleApp/ConfigurationManagerDataInjector.cs) in your .NET Core startup project to inject the JSON configuration data into the `System.Configuration.ConfigurationManager` class.
+  - This essentially writes the `AppSettings` and `ConnectionStrings` sections of the `appsettings.json` file to an \<executable app name\>.exe.config XML file on disk, so that `System.Configuration.ConfigurationManager` can find it and read it.
 
 Optionally:
 
