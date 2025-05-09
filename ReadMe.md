@@ -32,6 +32,12 @@ Optionally:
 By default the .NET Framework project and class library may reference the .NET Framework native System.Configuration assembly.
 If you plan to eventually run your app on Linux though, the assembly will not be available, so it's a good idea to swap out the .NET Framework native reference for the explicit NuGet package reference, as shown [in this commit](https://github.com/deadlydog/CSharp.Experiment.ClassLibraryReadsBothDotNetFrameworkAndDotNetCoreConfiguration/commit/5875044801de71470cf3d6841aeedb36c92a4f1a).
 
+### Alternative Option
+
+We could have used [the XMLConfigurationProvider](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/configuration/?view=aspnetcore-9.0#xml-configuration-provider) to read the XML configuration file into .NET Core.
+This may have allowed us to use the exact same XML configuration file in both .NET Framework and .NET Core applications, rather than having to duplicate the configuration in the `appsettings.json` file.
+However, we wanted to migrate to the new `appsettings.json` format, as that's the standard for .NET Core applications.
+
 ## ❤️ Donate to support more experiments like this
 
 Buy me an apple cider with whipped cream for providing this repo open source and for free 🙂
